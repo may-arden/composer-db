@@ -1,4 +1,5 @@
 class ComposersController < ApplicationController
+    before_action :set_composer, only [:show, :update, :destroy]
 
     # GET /composers
     def index
